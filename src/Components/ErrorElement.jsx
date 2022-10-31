@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Footer = () => {
+const ErrorElement = () => {
     return (
         <div>
-            footer
+            Rong Route
         </div>
     );
 };
 
-export default Footer;
+export default ErrorElement;
