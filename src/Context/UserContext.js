@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 
-const UserContext = () => {
+export const authUser = createContext();
+
+const UserContext = ({ children }) => {
+    const [user, setuser] = useState('shakeeb')
+
+    const authInfo = { user }
     return (
-        <div>
-
-        </div>
+        <authUser.Provider value={authInfo}>
+            {children}
+        </authUser.Provider>
     );
 };
 
